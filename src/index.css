@@ -1,0 +1,41 @@
+/* Fonts */
+@font-face {
+  font-family: "Sky Moon";
+  src: url("/src/assets/fonts/sky-moon.woff2") format("woff2"),
+    url("/src/assets/fonts/sky-moon.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Bristol";
+  src: url("/src/assets/fonts/bristol.woff2") format("woff2"),
+    url("/src/assets/fonts/bristol.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Open Sauce Sans";
+  src: url("/src/assets/fonts/open-sauce-sans.woff2") format("woff2"),
+    url("/src/assets/fonts/open-sauce-sans.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+body {
+  font-family: "Open Sauce Sans", sans-serif;
+  margin: 0;
+}
+
+h1, h2, h3 {
+  font-family: "Sky Moon", cursive;
+}
+
+h4, h5, h6 {
+  font-family: "Bristol", serif;
+}
+
+button, li {
+  font-family: "Open Sauce Sans", sans-serif;
+}

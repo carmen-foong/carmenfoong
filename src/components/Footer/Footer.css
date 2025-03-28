@@ -1,0 +1,160 @@
+/* Footer.css */
+.footer {
+  background-color: #c4dc49;
+  color: #333;
+  padding: 3rem 2rem 1rem;
+  width: 100%;
+}
+
+.footer-content {
+  display: flex;
+  justify-content: space-between; /* Changed from space-around */
+  flex-wrap: wrap;
+  max-width: 1200px;
+  margin: 0 auto;
+  gap: 2rem;
+}
+
+.footer-column {
+  margin-bottom: 2rem;
+}
+
+.name-image-column {
+  display: flex;
+  align-items: flex-start;
+  gap: 1.5rem;
+  min-width: 200px;
+}
+
+.connect-column {
+  display: flex;
+  justify-content: flex-end; /* Aligns content to the end */
+  min-width: 200px;
+}
+
+.connect-content {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end; /* Aligns text to the right */
+  gap: 1rem;
+}
+
+.name-stack {
+  display: flex;
+  flex-direction: column;
+}
+
+.name-text {
+  font-size: 2rem;
+  font-weight: 700;
+  line-height: 1;
+  margin: 0;
+}
+
+.portfolio-text {
+  font-size: 1.25rem;
+  font-weight: 500;
+  margin: 0.5rem 0 0;
+}
+
+.vertical-image {
+  height: 120px;
+  width: auto;
+  object-fit: cover;
+}
+
+.footer-heading {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+  margin-top: 0;
+  position: relative;
+  display: inline-block;
+}
+
+.footer-heading::after {
+  content: "";
+  position: absolute;
+  bottom: -8px;
+  right: 0; /* Changed from left to right */
+  width: 50px;
+  height: 2px;
+  background-color: #333;
+}
+
+.email-link a {
+  color: #333;
+  text-decoration: none;
+  font-size: 1.1rem;
+  transition: color 0.3s ease;
+  text-align: right;
+}
+
+.email-link a:hover {
+  color: #000;
+  text-decoration: underline;
+}
+
+.social-icons {
+  display: flex;
+  gap: 1.5rem;
+  margin-top: 0.5rem;
+}
+
+.social-icon {
+  font-size: 1.8rem;
+  color: #333;
+  transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.social-icon:hover {
+  color: #000;
+  transform: scale(1.1);
+}
+
+.footer-bottom {
+  text-align: center;
+  padding-top: 2rem;
+  margin-top: 2rem;
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+@media (max-width: 768px) {
+  .footer-content {
+    flex-direction: column;
+    gap: 3rem;
+  }
+
+  .name-image-column {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .connect-column {
+    align-items: center;
+    justify-content: center;
+  }
+
+  .connect-content {
+    align-items: center;
+  }
+
+  .vertical-image {
+    height: 100px;
+    margin-top: 1rem;
+  }
+
+  .footer-heading::after {
+    left: 50%;
+    right: auto;
+    transform: translateX(-50%);
+  }
+
+  .social-icons {
+    justify-content: center;
+  }
+
+  .email-link a {
+    text-align: center;
+  }
+}
