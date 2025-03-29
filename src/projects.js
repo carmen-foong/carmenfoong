@@ -10,7 +10,6 @@ const projects = [
       "Theatre Arts Conference is an international theatre arts conference with a special focus on practices in South East Asia. I was involved in designing social media posts and organising the content calendar to enhance audience engagement and event visibility.",
     imageUrl:
       "/src/Portfolio Works/Campaigns/SDEA Internship/Theatre Arts Conference 2023/1.png",
-    link: "#",
     images: [
       "/src/Portfolio Works/Campaigns/SDEA Internship/Theatre Arts Conference 2023/1.png",
       "/src/Portfolio Works/Campaigns/SDEA Internship/Theatre Arts Conference 2023/2.png",

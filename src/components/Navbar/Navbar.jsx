@@ -75,7 +75,7 @@ const Navbar = () => {
         transition={{ duration: 0.5 }}
       >
         <Link to="/" style={{ textDecoration: "none", color: "black" }}>
-          CREATIVE PORTFOLIO
+          <img src="/src/Portfolio Graphics/4.png" alt="" style={{maxHeight:"100px"}}/>REATIVE PORTFOLIO
         </Link>
       </motion.h1>
 

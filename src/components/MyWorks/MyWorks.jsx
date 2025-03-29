@@ -1,6 +1,6 @@
 import { useState } from "react";
 import "./MyWorks.css";
-import { projects } from "/src/projects.js"
+import { projects } from "/src/projects.js";
 import { Link } from "react-router-dom";
 
 const categories = [
@@ -41,8 +41,8 @@ export default function MyWorks() {
       <div className="grid">
         {filteredProjects.map((project) => (
           <Link
-            key={project.title}
-            to={`/projects/${project.title.toLowerCase().replace(/\s+/g, "-")}`}
+            key={project.id}
+            to={`/projects/${project.id}`}
             className="project-link"
           >
             <div className="image-container">

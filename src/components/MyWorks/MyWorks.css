@@ -1,7 +1,6 @@
 .container {
   width: 100%;
   max-width: 1400px;
-  padding: 2rem;
   margin: 0 auto;
 }
 
@@ -17,8 +16,9 @@
 .grid {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-  gap: 2rem;
+  gap: 3rem;
   justify-items: center;
+  padding: 2rem;
 }
 
 .project-link {

@@ -1,0 +1,129 @@
+/* ProjectDetail.css */
+.project-detail {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem 1.5rem;
+  font-family: 'Helvetica Neue', Arial, sans-serif;
+  color: #333;
+  line-height: 1.6;
+}
+
+.project-detail h1 {
+  font-size: 2.5rem;
+  margin-bottom: 1.5rem;
+  color: #222;
+  padding-bottom: 0.5rem;
+  border-bottom: 2px solid #f0f0f0;
+}
+
+.project-media {
+  margin: 2rem 0;
+}
+
+/* Video styles */
+.video-container {
+  width: 100%;
+  margin-bottom: 2rem;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.video-container video {
+  width: 100%;
+  display: block;
+}
+
+/* Image grid styles */
+.project-images {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 1.5rem;
+  margin-top: 2rem;
+}
+
+.project-images img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.project-images img:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+/* Content styles */
+.project-content {
+  margin-top: 2rem;
+}
+
+.project-content h3 {
+  font-size: 1.5rem;
+  margin: 2rem 0 1rem;
+  color: #444;
+}
+
+.project-content p {
+  margin-bottom: 1.5rem;
+  font-size: 1.1rem;
+}
+
+.project-meta {
+  margin-top: 2rem;
+  padding-top: 1rem;
+  border-top: 1px solid #eee;
+}
+
+.external-link {
+  display: inline-block;
+  margin-top: 1rem;
+  padding: 0.6rem 1.2rem;
+  background-color: #2563eb;
+  color: white;
+  text-decoration: none;
+  border-radius: 4px;
+  font-weight: 500;
+  transition: background-color 0.2s ease;
+}
+
+.external-link:hover {
+  background-color: #1d4ed8;
+}
+
+/* Responsive adjustments */
+@media (max-width: 900px) {
+  .project-images {
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  }
+}
+
+@media (max-width: 600px) {
+  .project-detail {
+    padding: 1rem;
+  }
+  
+  .project-detail h1 {
+    font-size: 2rem;
+  }
+  
+  .project-images {
+    grid-template-columns: 1fr;
+  }
+}
+
+.back-button {
+  background-color: #1c1c1c;
+  padding: 0.5rem 1rem;
+  border-radius: 1rem;
+  color: white;
+  border: none;
+}
+
+.back-button:hover {
+  background-color: whitesmoke;
+  color: #1c1c1c;
+  border: 1px solid black;
+}
