@@ -1,6 +1,7 @@
 import { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import "./Navbar.css";
+import { Link } from "react-router-dom";
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -73,7 +74,9 @@ const Navbar = () => {
         animate={{ opacity: 1, x: 0 }}
         transition={{ duration: 0.5 }}
       >
-        My Website
+        <Link to="/" style={{ textDecoration: "none", color: "black" }}>
+          CREATIVE PORTFOLIO
+        </Link>
       </motion.h1>
 
       {isMobile && (
@@ -108,27 +111,63 @@ const Navbar = () => {
             animate={isOpen ? "open" : "closed"}
             exit="closed"
           >
-            {["MY WORKS", "ABOUT", "CONTACT"].map((item) => (
-              <motion.li
-                key={item}
-                variants={itemVariants}
-                whileHover={{ scale: 1.05 }}
-                whileTap={{ scale: 0.95 }}
+            {[
+              {
+                name: "MY WORKS",
+                path: "/myworks",
+              },
+              {
+                name: "ABOUT",
+                path: "/about",
+              },
+              {
+                name: "CONTACT",
+                path: "/contact",
+              },
+            ].map((item) => (
+              <Link
+                to={item.path}
+                style={{ textDecoration: "none", color: "black" }}
               >
-                <a href="#">{item}</a>
-              </motion.li>
+                <motion.li
+                  key={item.name}
+                  variants={itemVariants}
+                  whileHover={{ scale: 1.05 }}
+                  whileTap={{ scale: 0.95 }}
+                >
+                  <span>{item.name}</span>
+                </motion.li>
+              </Link>
             ))}
           </motion.ul>
         ) : (
           <ul className="nav-links desktop">
-            {["MY WORKS", "ABOUT", "CONTACT"].map((item) => (
-              <motion.li
-                key={item}
-                whileHover={{ scale: 1.05 }}
-                whileTap={{ scale: 0.95 }}
+            {[
+              {
+                name: "MY WORKS",
+                path: "/myworks",
+              },
+              {
+                name: "ABOUT",
+                path: "/about",
+              },
+              {
+                name: "CONTACT",
+                path: "/contact",
+              },
+            ].map((item) => (
+              <Link
+                to={item.path}
+                style={{ textDecoration: "none", color: "black" }}
               >
-                <a href="#">{item}</a>
-              </motion.li>
+                <motion.li
+                  key={item.name}
+                  whileHover={{ scale: 1.05 }}
+                  whileTap={{ scale: 0.95 }}
+                >
+                  <span>{item.name}</span>
+                </motion.li>
+              </Link>
             ))}
           </ul>
         )}

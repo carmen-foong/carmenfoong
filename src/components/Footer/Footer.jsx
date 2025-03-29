@@ -19,7 +19,7 @@ const Footer = () => {
             <h3 className="portfolio-text">Creative Portfolio</h3>
           </div>
           <img
-            src="" // Add your image path here
+            src="/src/Portfolio Graphics/12.png"
             alt="Decorative element"
             className="vertical-image"
           />
@@ -55,6 +55,7 @@ const Footer = () => {
 
       <div className="footer-bottom">
         <p>© {new Date().getFullYear()} Carmen Foong. All rights reserved.</p>
+        <p>Developed with love by Wellesley ❤️</p>
       </div>
     </footer>
   );
