@@ -3,7 +3,7 @@
   "private": true,
   "version": "0.0.0",
   "type": "module",
-  "homepage": "https://carmen-foong.github.io/carmenfoong",
+  "homepage": "https://carmen-foong.github.io/",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
