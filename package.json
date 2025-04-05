@@ -1,16 +1,16 @@
 {
   "name": "carmenfoong",
+  "homepage": "https://carmen-foong.github.io/carmenfoong",
   "private": true,
   "version": "0.0.0",
   "type": "module",
-  "homepage": "https://carmen-foong.github.io/",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
     "lint": "eslint .",
     "preview": "vite preview",
     "predeploy": "npm run build",
-    "deploy": "gh-pages -d dist -r https://github.com/carmen-foong/carmenfoong.git"
+    "deploy": "gh-pages -d dist"
   },
   "dependencies": {
     "framer-motion": "^12.6.2",
