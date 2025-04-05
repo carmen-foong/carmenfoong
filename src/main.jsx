@@ -1,5 +1,5 @@
 import { createRoot } from "react-dom/client";
-import { createBrowserRouter, RouterProvider } from "react-router-dom";
+import { createBrowserRouter, createHashRouter, RouterProvider } from "react-router-dom";
 import App from "/src/pages/App/App.jsx";
 import ProjectDetail from "/src/pages/ProjectDetail/ProjectDetail.jsx";
 import ErrorPage from "/src/pages/ErrorPage/ErrorPage.jsx";
@@ -21,7 +21,7 @@ function projectLoader({ params }) {
   return project;
 }
 
-const router = createBrowserRouter([
+const router = createHashRouter([
   {
     path: "/",
     element: <App />,
