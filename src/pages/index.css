@@ -1,26 +1,26 @@
 /* Fonts */
 @font-face {
   font-family: "Sky Moon";
-  src: url("/src/assets/fonts/sky-moon.woff2") format("woff2"),
-    url("/src/assets/fonts/sky-moon.woff") format("woff");
+  src: url("/fonts/SkyMoon/Sky Moon.otf") format("opentype");
   font-weight: normal;
   font-style: normal;
+  font-display: swap;
 }
 
 @font-face {
   font-family: "Bristol";
-  src: url("/src/assets/fonts/bristol.woff2") format("woff2"),
-    url("/src/assets/fonts/bristol.woff") format("woff");
+  src: url("/fonts/Bristol/Bristol.otf") format("opentype");
   font-weight: normal;
   font-style: normal;
+  font-display: swap;
 }
 
 @font-face {
   font-family: "Open Sauce Sans";
-  src: url("/src/assets/fonts/open-sauce-sans.woff2") format("woff2"),
-    url("/src/assets/fonts/open-sauce-sans.woff") format("woff");
+  src: url("/fonts/OpenSauceSans/OpenSauceSans-Regular.ttf") format("truetype");
   font-weight: normal;
   font-style: normal;
+  font-display: swap;
 }
 
 body {
