@@ -1,7 +1,84 @@
 import React, { useState } from "react";
-import "./Contact.css";
 import Footer from "../Footer/Footer";
 import Navbar from "../Navbar/Navbar";
+
+const styles = `
+.contact-container {
+  background-color: #fea7ef;
+  min-height: 100vh;
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.contact-heading {
+  color: #333;
+  margin-bottom: 2rem;
+  font-size: 2.5rem;
+  text-align: center;
+}
+
+.contact-form {
+  background-color: white;
+  padding: 2rem;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 600px;
+}
+
+.form-group {
+  margin-bottom: 1.5rem;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 0.5rem;
+  font-weight: 500;
+  color: #333;
+}
+
+.form-group input,
+.form-group textarea {
+  width: 100%;
+  padding: 0.8rem;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-size: 1rem;
+}
+
+.form-group textarea {
+  resize: vertical;
+}
+
+.submit-button {
+  background-color: #222;
+  color: white;
+  border: none;
+  padding: 1rem 2rem;
+  font-size: 1rem;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  width: 100%;
+}
+
+.submit-button:hover {
+  background-color: #000;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .contact-form {
+    padding: 1.5rem;
+  }
+  
+  .contact-heading {
+    font-size: 2rem;
+  }
+}
+`;
 
 const Contact = () => {
   const [formData, setFormData] = useState({
@@ -34,7 +111,8 @@ const Contact = () => {
 
   return (
     <>
-    <Navbar />
+      <style>{styles}</style>
+      <Navbar />
       <div className="contact-container">
         <h1 className="contact-heading">Contact Me</h1>
         <form className="contact-form" onSubmit={handleSubmit}>
