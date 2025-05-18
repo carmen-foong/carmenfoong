@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import { FaLinkedin, FaInstagram } from "react-icons/fa";
+import { FaLinkedin , FaMailBulk } from "react-icons/fa";
 import React from "react";
 
 const footerStyles = `
@@ -158,7 +158,7 @@ const Footer = () => {
               <h3 className="portfolio-text">Creative Portfolio</h3>
             </div>
             <img
-              src="/src/Portfolio Graphics/12.png"
+              src="Portfolio Graphics/12.png"
               alt="Decorative element"
               className="vertical-image"
             />
@@ -168,11 +168,13 @@ const Footer = () => {
             <div className="connect-content">
               <h3 className="footer-heading">Let's Connect!</h3>
               <div className="email-link">
-                <a href="mailto:carmenfoong5@gmail.com">carmenfoong5@gmail.com</a>
+                <a href="mailto:carmenfoong5@gmail.com">
+                  carmenfoong5@gmail.com
+                </a>
               </div>
               <div className="social-icons">
                 <a
-                  href="https://linkedin.com/in/yourprofile"
+                  href="https://www.linkedin.com/in/carmenfoong5/"
                   target="_blank"
                   rel="noopener noreferrer"
                   aria-label="LinkedIn"
@@ -180,12 +182,12 @@ const Footer = () => {
                   <FaLinkedin className="social-icon" size={28} />
                 </a>
                 <a
-                  href="https://instagram.com/yourprofile"
+                  href="mailto:carmenfoong5@gmail.com"
                   target="_blank"
                   rel="noopener noreferrer"
-                  aria-label="Instagram"
+                  aria-label="Mail"
                 >
-                  <FaInstagram className="social-icon" size={28} />
+                  <FaMailBulk className="social-icon" size={28} />
                 </a>
               </div>
             </div>
@@ -194,7 +196,6 @@ const Footer = () => {
 
         <div className="footer-bottom">
           <p>© {new Date().getFullYear()} Carmen Foong. All rights reserved.</p>
-          <p>Developed with love by Wellesley ❤️</p>
         </div>
       </footer>
     </>

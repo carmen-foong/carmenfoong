@@ -1,25 +1,5 @@
-import React from 'react';
-
-const featuredWorks = [
-  {
-    title: 'Project Alpha',
-    description: 'A modern web app for managing tasks efficiently.',
-    image: '/images/project-alpha.jpg',
-    link: '/works/project-alpha',
-  },
-  {
-    title: 'Design Portfolio',
-    description: 'A showcase of creative design projects.',
-    image: '/images/design-portfolio.jpg',
-    link: '/works/design-portfolio',
-  },
-  {
-    title: 'E-commerce Site',
-    description: 'A full-featured online store experience.',
-    image: '/images/ecommerce-site.jpg',
-    link: '/works/ecommerce-site',
-  },
-];
+import { Link } from 'react-router-dom';
+import { projects } from '../../projects'; // Adjust the path as needed
 
 const styles = `
 .hero-works {
@@ -102,25 +82,32 @@ const styles = `
 `;
 
 const HeroWorks = () => {
+  // Pick the first 3 projects to feature
+  const featuredProjects = projects.slice(0, 4);
+
   return (
     <section className="hero-works">
       <style>{styles}</style>
       <h2>My Works</h2>
       <div className="works-list">
-        {featuredWorks.map((work) => (
-          <div className="work-card" key={work.title}>
-            <a href={work.link}>
-              <img src={work.image} alt={work.title} className="work-image" />
+        {featuredProjects.map((work) => (
+          <div className="work-card" key={work.id}>
+            <Link to={`/projects/${work.id}`}>
+              <img
+                src={work.imageUrl}
+                alt={work.title}
+                className="work-image"
+              />
               <h3>{work.title}</h3>
               <p>{work.description}</p>
-            </a>
+            </Link>
           </div>
         ))}
       </div>
       <div className="see-more-container">
-        <a href="/works" className="see-more-button">
+        <Link to="/myworks" className="see-more-button">
           See more
-        </a>
+        </Link>
       </div>
     </section>
   );

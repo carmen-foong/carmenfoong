@@ -208,7 +208,7 @@ const Navbar = () => {
           }}
         >
           <img
-            src="src/Portfolio Graphics/4.png"
+            src="Portfolio Graphics/4.png"
             alt="Logo"
             style={{
               maxHeight: "48px",
