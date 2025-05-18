@@ -1,5 +1,5 @@
 import { createRoot } from "react-dom/client";
-import { createBrowserRouter, createHashRouter, RouterProvider } from "react-router-dom";
+import { createHashRouter, RouterProvider } from "react-router-dom";
 import App from "/src/pages/App/App.jsx";
 import ProjectDetail from "/src/pages/ProjectDetail/ProjectDetail.jsx";
 import ErrorPage from "/src/pages/ErrorPage/ErrorPage.jsx";

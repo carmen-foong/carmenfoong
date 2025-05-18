@@ -1,6 +1,6 @@
 {
-  "name": "carmenfoong",
-  "homepage": "https://carmen-foong.github.io/carmenfoong",
+  "name": "website",
+  "homepage": "https://carmen-foong.github.io/website",
   "private": true,
   "version": "0.0.0",
   "type": "module",
@@ -10,7 +10,7 @@
     "lint": "eslint .",
     "preview": "vite preview",
     "predeploy": "npm run build",
-    "deploy": "gh-pages -d dist -r  https://github.com/carmen-foong/carmenfoong"
+    "deploy": "gh-pages -d dist -r  https://github.com/carmen-foong/website"
   },
   "dependencies": {
     "framer-motion": "^12.6.2",
