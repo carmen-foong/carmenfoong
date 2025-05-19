@@ -123,36 +123,17 @@ const AboutMe = () => {
         <div className="about-me-content">
           <div className="about-me-text">
             <p className="about-me-intro">
-              Hello! I am Carmen Foong, a Final Year Arts Business Management
-              student at Ngee Ann Polytechnic. Joining Drama Club in secondary
-              school out of mere curiosity, my interest-turned-passion has
-              brought me a long way, and I am now pursuing a career in the arts!
+              A positive, action-oriented and dependable individual who believes in the power of storytelling as a tool to build and bridge communities.
             </p>
             <p>
-              Behind-the-scenes work has been a long-time passion of mine as I
-              love its dynamic yet challenging nature, and how it serves as the
-              very backbone of productions and events. My strong organizational
-              and leadership skills make me a great person to work with, and I
-              carry out my duties with a strong sense of responsibility and
-              integrity.
+              As an Arts Business Management graduate, I have acquired a variety of skills in both the creative and business aspects of the arts - from community outreach, to programme planning and visual communication. My 6-month marketing internship at Singapore Drama Educators Association also showed me the power of storytelling as a tool to build a brand and connect with audiences, and my strength in doing so.
             </p>
             <p>
-              When I'm not working on productions, I write poems to express
-              myself, and live by the motto:
-              <em>"Work hard, play harder."</em> I believe in the power of
-              storytelling to connect communities and create meaningful
-              experiences.
+              Wanting to combine both my passions in creative community engagement and digital storytelling, I decided to pursue a Degree in Digital Communications and Integrated Media to equip myself with skills in digital communications and media. I believe that this will allow me to reach and touch the right audiences with the right words, and create value in the lives of others.
             </p>
-            <div className="about-me-passions">
-              <h3>My Passions:</h3>
-              <ul>
-                <li>Arts administration and production</li>
-                <li>Community engagement through the arts</li>
-                <li>Digital storytelling and media</li>
-                <li>Creative writing and poetry</li>
-                <li>Event planning and coordination</li>
-              </ul>
-            </div>
+            <p>
+              In my free time, I enjoy crocheting, playing the piano and writing poems, and have published a poetry blog titled 'FIVEODES' for my beloved self-written poems! I love life, and my goal is to work hard but play even harder.
+            </p>
           </div>
           <div className="about-me-image">
             <img src={profileImage} alt="Carmen Foong" />
